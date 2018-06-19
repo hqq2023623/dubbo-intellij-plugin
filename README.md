@@ -1,0 +1,1 @@
+# dubbo-intellij-plugin
