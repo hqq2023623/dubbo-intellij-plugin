@@ -7,8 +7,8 @@ import com.intellij.util.xml.Stubbed;
 import com.intellij.util.xml.StubbedOccurrence;
 
 /**
- * @author mei
- * @date 07/12/2017
+ * @author lzj
+ * @date 2018/6/19
  */
 @Stubbed
 @StubbedOccurrence

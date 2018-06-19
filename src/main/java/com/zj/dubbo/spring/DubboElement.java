@@ -4,7 +4,8 @@ import com.intellij.util.xml.DomElement;
 import com.intellij.util.xml.Namespace;
 
 /**
- * Created by mei on 04/12/2017.
+ * @author lzj
+ * @date 2018/6/19
  */
 @Namespace("DubboReference namespace key")
 public interface DubboElement extends DomElement {

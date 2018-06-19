@@ -6,7 +6,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Created by mei on 01/12/2017.
+ * @author lzj
+ * @date 2018/6/19
  */
 public class DubboReferenceBeanTypeProvider implements BeanTypeProvider {
     @NotNull

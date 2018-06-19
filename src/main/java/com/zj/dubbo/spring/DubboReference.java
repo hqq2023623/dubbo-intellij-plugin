@@ -8,9 +8,9 @@ import com.intellij.util.xml.StubbedOccurrence;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Created by mei on 30/11/2017.
+ * @author lzj
+ * @date 2018/6/19
  */
-
 @Stubbed
 @StubbedOccurrence
 @BeanType(provider = DubboReferenceBeanTypeProvider.class)

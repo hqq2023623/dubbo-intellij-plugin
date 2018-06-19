@@ -1,12 +1,13 @@
 package com.zj.dubbo.spring;
 
+import com.intellij.psi.PsiType;
 import com.intellij.spring.model.xml.BeanNameProvider;
 import com.intellij.spring.model.xml.DomSpringBean;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * @author mei
- * @date 05/12/2017
+ * @author lzj
+ * @date 2018/6/19
  */
 public class DubboBeanNameProvider implements BeanNameProvider{
     @Nullable
@@ -19,6 +20,7 @@ public class DubboBeanNameProvider implements BeanNameProvider{
         if (domSpringBean instanceof DubboApplication) {
             return ((DubboApplication) domSpringBean).getName().getValue();
         }
-        return domSpringBean.getBeanType().getCanonicalText();
+        PsiType psiType = domSpringBean.getBeanType();
+        return psiType == null ? "" : psiType.getCanonicalText();
     }
 }
