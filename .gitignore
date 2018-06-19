@@ -42,3 +42,6 @@ antx.properties
 doc
 out
 target/
+gradle/
+*.gradle
+build/

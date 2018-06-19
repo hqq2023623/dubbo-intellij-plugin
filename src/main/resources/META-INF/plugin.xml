@@ -1,0 +1,43 @@
+<idea-plugin>
+    <id>com.zj.intellij.plugin.dubbo</id>
+    <name>dubbo-plugin</name>
+    <vendor email="371209704@qq.com" url="http://www.yourcompany.com">meizu</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <depends optional="true">com.intellij.database</depends>
+    <depends optional="true">com.intellij.spring</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <spring.customNamespaces implementation="com.zj.dubbo.spring.DubboCustomNamespaces" />
+
+        <dom.implementation interfaceClass="com.zj.dubbo.spring.DubboReference"
+                            implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+
+        <dom.implementation interfaceClass="com.zj.dubbo.spring.DubboApplication"
+                            implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+
+        <dom.implementation interfaceClass="com.zj.dubbo.spring.DubboConsumer"
+                            implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+
+        <dom.implementation interfaceClass="com.zj.dubbo.spring.DubboProvider"
+                            implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+
+        <dom.implementation interfaceClass="com.zj.dubbo.spring.DubboRegistry"
+                            implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
